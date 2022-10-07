@@ -1,0 +1,22 @@
+server:
+  port: 8888
+  servlet:
+    session:
+      cookie:
+        name: u_id
+# 数据库连接
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+    #url: jdbc:mysql://rm-bp188x0g51bxqrg92qo.mysql.rds.aliyuncs.com:3306/os_2021_2022_2?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: Www.520@yh
+    #password: Gh21st!(&^$*
+# 寻找mapper.xml文件
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+
+logging:
+  level:
+    com.baomidou.mybatisplus.samples: debug
